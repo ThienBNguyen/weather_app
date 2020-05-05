@@ -33,3 +33,5 @@ const getData = async () => {
         console.log('error', err)
     }
 }
+
+export { getData }

@@ -1,7 +1,17 @@
+# Weather App Project
+## Overview
 this project is about geting location and weather and photo from the api.
-
+## Installation 
+you need to install node.js and NPM locally and use express server as dependency 
 folder structure
 
+
+## tools
+VSC
+UDACITY Template [https://github.com/udacity/fend/blob/refresh-2019/projects/weather-journal-app/README.md]
+weatherbit[weatherbit.io]
+geoname[http://www.geonames.org/]
+pixabay[https://pixabay.com/]
 - Root:
   - `package.json`
   - `readme.md`
