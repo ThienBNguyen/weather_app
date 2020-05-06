@@ -31,7 +31,7 @@ app.get('/', function (req, res) {
     res.sendFile('.index.html')
 })
 //get data from the api
-app.get('/weather/:location', async (request, response) => {
+app.get('/weather/:location', async function fetchApi(request, response) {
     const location = request.params.location
     console.log(location)
     const weatherbit_url = `https://api.weatherbit.io/v2.0/forecast/daily?city=${location}&key=9239ee028e8345bbbd8e90265ff00ad1`
@@ -56,3 +56,4 @@ app.get('/weather/:location', async (request, response) => {
     response.json(projectData)
 
 })
+module.export = fetchApi

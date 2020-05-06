@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Travel App</title>
 </head>
 
@@ -18,20 +17,29 @@
             <input type="text" id="location" placeholder="Vietnam">
             <label for="arrive">Enter departure date:</label>
             <input type="date" id="departure">
-            <label for="return" id="return"> Enter return date:</label>
-            <input type="date" id="return">
+            <label for="return"> Enter return date:</label>
+            <input type="date" id="leave">
             <input type="submit" value="submit" id="submit">
         </form>
     </section>
     <div class="card">
-        <img style="width:20%" id="img">
-        <div class="container">
+        <img src="" alt="" style="width:20%" id="img">
+        <div id="container">
             <h4 id="name"><b></b></h4>
             <p id="detail"> <span id="high"></span> <span id="low"></span> </p>
             <p id="weather-detail"></p>
+            <div id="showDay"></div>
         </div>
     </div>
-    <script type="text/javascript" src="./dist/main.js"></script>
+    <div>
+        <img src="" alt="" style="width:20%" id="img1">
+        <div id="container1">
+            <h4 id="name1"><b></b></h4>
+            <p id="detail1"> <span id="high"></span> <span id="low"></span> </p>
+            <p id="weather-detail1"></p>
+            <div id="showDay1"></div>
+        </div>
+    </div>
     <script>
         // Check that service workers are supported
         if ('serviceWorker' in navigator) {
